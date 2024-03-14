@@ -19,10 +19,16 @@ void input() {
 
         }
     }
+
     cout << endl;
     cout << "===============" << endl;
     cout << "masukan Elemen Array" << endl;
     cout << "===============" << endl;
+
+    for (int i = 0; i < n; i++) {
+        cout << "data ke-" << (i + 1) << ": ";
+        cin >> arr[i];
+    }
 
 }
 
@@ -56,17 +62,14 @@ void display() {
     cout << endl;
 }
 
-
-
-
-
 int main()
 {
     input();
-    InsrtionSort();
+    insertionSort();
     display();
 
     system("pause");
-    return 0;
+    return 0;
+
 
 }
