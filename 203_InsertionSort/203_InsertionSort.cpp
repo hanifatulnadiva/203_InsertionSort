@@ -4,7 +4,8 @@
 #include <iostream>
 using namespace std;
 
-
+int n;
+int i;
 
 void input() {
     while (true) {
@@ -25,7 +26,7 @@ void input() {
 }
 
 void insertionSort() {
-    int i, j, n, temp;
+    int j, temp;
     int arr[20];
 
     for (i = 1; i <= n - 1; i++) {  //step 1
